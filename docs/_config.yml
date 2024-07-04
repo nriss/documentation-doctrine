@@ -21,7 +21,7 @@
 title: Documentation Github ANS
 description: A Jekyll theme for documentation
 baseurl: "/Documentation" # the subpath of your site, e.g. /blog
-url: "https://ansforge.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nriss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 highlighter: rouge
 
 # Build settings
