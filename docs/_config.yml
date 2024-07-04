@@ -26,7 +26,7 @@ highlighter: rouge
 
 # Build settings
 # theme: 
-remote_theme: nriss/ans-jekyll-theme
+remote_theme: ansforge/ans-jekyll-theme
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
