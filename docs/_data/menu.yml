@@ -3,12 +3,12 @@ header:
     url: /
   - title: Doctrine du CI-SIS
     subfolderitems:
-      - page: Premiers pas sur Github
-        url: /pages/docs/github.html
-        title: Premiers pas sur Github
-      - page: Création de projet
-        url: /pages/docs/creationprojet.html
-        title: Création de projet
+      - page: Trajectoire interopérabilité
+        url: /pages/docs/trajectoire-iop.html
+        title: Trajectoire interopérabilité
+      - page: Cycle de vie des spécifications
+        url: /pages/docs/cycle-de-vie.html
+        title: Cycle de vie des spécifications
   - title: Gouvernance du CI-SIS
     subfolderitems:
       - page: Premiers pas sur Github
