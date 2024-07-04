@@ -1,7 +1,7 @@
 header:
   - title: Accueil
     url: /
-  - title: Documentation
+  - title: Doctrine du CI-SIS
     subfolderitems:
       - page: Premiers pas sur Github
         url: /pages/docs/github.html
@@ -9,17 +9,14 @@ header:
       - page: Création de projet
         url: /pages/docs/creationprojet.html
         title: Création de projet
-      - page: Ouvrir le code source
-        url: /pages/docs/codesource.html
-        title: Ouvrir le code source
-      - page: Code de conduite
-        url: /pages/docs/codedeconduite.html
-        title: Code de conduite
-      - page: Bonnes pratiques
-        url: /pages/docs/bonnespratiques.html
-        title: Bonnes pratiques
-  - title: Tableau de bord
-    url: /pages/dashboard/indicateurs.html 
+  - title: Gouvernance du CI-SIS
+    subfolderitems:
+      - page: Premiers pas sur Github
+        url: /pages/docs/github.html
+        title: Premiers pas sur Github
+      - page: Création de projet
+        url: /pages/docs/creationprojet.html
+        title: Création de projet
   - title: Site de l'ANS
     url: https://esante.gouv.fr
     external: true
