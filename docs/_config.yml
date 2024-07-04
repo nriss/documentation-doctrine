@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Documentation Github ANS
+title: Doctrine & Gouvernance du CI-SIS
 description: A Jekyll theme for documentation
 baseurl: "/documentation-doctrine" # the subpath of your site, e.g. /blog
 url: "https://nriss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
