@@ -7,7 +7,12 @@ description:
 
 ## Qu'est-ce que l'interopérabilité ?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+L'interopérabilité en e-santé consiste à trouver un langage informatique uniforme entre les différents systèmes d'information pour que celles-ci soient intégrables directement dans les logiciels, réutilisables, et exploitables.
+Un langage de données commun permet un partage et un accès facilité à la donnée, ce qui a une plus-value immense pour le patient, mais aussi pour la recherche clinique.
+
+L'interopérabilité est souvent confondue avec référencement, or ils ne sont pas synonymes. Les référencements peuvent avoir des exigences d'interopérabilité, c'est à dire la nécessité de respecter certains modèles de données, mais les exigences peuvent être beaucoup plus larges : sécurité, hébergement HDS, ...
+
+Il est également important de noter que l'interopérabilité doit être construit de manière collaborative, avec l'ensemble des acteurs du système, pour avoir une vision la plus large possible. L'interopérabilité doit être pensé au plus tôt au moment de la conception du logiciel, "interoperability by design", car une fois des interfaces graphiques développées totalement corrélées aux flux propriétaires, il est bien plus coûteux de faire l'évolution dans l'autre sens.
 
 ## Stratégie des versions FHIR
 
@@ -18,19 +23,16 @@ La stratégie sur le choix des versions FHIR a été définie au sein d'un group
 Pour garantir un écosystème cohérent, il est nécessaire de privilégier l’usage de FHIR R4.
 
 Dans certains cas, une autre version de FHIR peut être justifiée, par exemple pour des besoins d’échanges internationaux ou pour des ressources qui ont beaucoup évolué en termes de modélisation ou de maturité entre deux versions (ex : ressources médicament). Le cas échéant, l’usage d’une nouvelle version devra être validé par une étude des normes et standards et par l’écosystème.
-
-Dans certains cas non identifiés encore à ce jour, il pourrait être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d’essayer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience et estimer la charge.
+Dans certains cas non identifiés encore à ce jour, il pourrait également être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d’essayer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience et estimer la charge.
 
 ### Ne pas créer d’IG FrCore R5 sans cas d’usage identifié
 
-Cela engendrerait une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
-
-La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes.
+La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer un IG FrCore R5 engendrerait une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
 S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
 
-* Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien)
-* Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils.
+- Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien)
+- Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils.
 
 ### Anticiper dès à présent la transition vers R6
 
@@ -43,15 +45,13 @@ Beaucoup de travaux ont été menés en 2023 tels que le passage au format IG et
 
 En 2024 et 2025, les priorités sont :
 
-* La montée en compétences et l’acculturation des développeurs aux bonnes pratiques d’usages de FHIR
-* S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, …).
-* La prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.
+- La montée en compétences et l’acculturation des développeurs aux bonnes pratiques d’usages de FHIR
+- S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, …).
+- La prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.
 
 Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilitéet de se garder la possibilité de réitérer l’analyse si le besoin a évolué.
 
-## Cartographie de l'interopérabilité
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+<!-- ## Cartographie de l'interopérabilité -->
 
 ## Listing des acteurs influençant la trajectoire
 
@@ -59,9 +59,21 @@ Il est important de noter que de nombreux acteurs influencent la trajectoire et 
 
 Les acteurs peuvent se classifier sur plusieurs statuts : au niveau politique, au niveau technique et au niveau implémentation.
 
+### Les acteurs dits "politiques"
+
+Ministère de la santé, commission européenne, EHDS
+
+### Les acteurs dits "techniques"
+
+IHE, HL7 International, HL7 Europe
+
+### Les acteurs dits "implémenteurs"
+
+La CNAM (DMP, Mon Espace Santé), l'écosystème français des éditeurs de logiciels de soin
+
 ## Focus FHIR Document
 
-Aujourd'hui en France, l'ensemble des documents médicaux sont stockés en CDA, notamment avec la plus grande plateforme technique médicale nationale : le DMP, brique de Mon Espace Santé. Le nouveau standard d'interopérabilité FHIR, connu pour son API Rest standard, est utilisé dans de nombreux cas d'usages en France : l'annuaire santé, le ROR, le SAS, Mon Espace Santé, .... L'usage de FHIR peut être étendu aux documents
+Aujourd'hui en France, l'ensemble des documents médicaux sont stockés en CDA, notamment avec la plus grande plateforme technique médicale nationale : le DMP, brique de Mon Espace Santé. Le nouveau standard d'interopérabilité FHIR, connu pour son API Rest standard, est utilisé dans de nombreux cas d'usages en France : l'annuaire santé, le ROR, le SAS, Mon Espace Santé, .... L'usage de FHIR peut être étendu aux documents.
 
 ### Etude internationale
 
@@ -84,17 +96,29 @@ En plus de la trajectoire internationale semblant mener vers l'usage du FHIR doc
 
 ### Avis de l'Agence du Numerique en Santé
 
-Il existe deux possibilités quant à l'usage du standard FHIR dans la gestion des documents en France :
+Dans tous les cas, il est indispensable d'anticiper la prise en charge du FHIR document, les nombreux indices internationaux et projets lancés cités ci-dessus mettent en lumière l'importance d'un consensus sur l'utilisation des standards pour une interopérabilité internationale.
+
+Il existe deux possibilités quant à l'usage du standard FHIR dans la gestion des documents en France
 
 #### Mettre en place une transformation entre les standards CDA et FHIR
 
-Ces travaux ont un défaut : la nécessité de maintenir le mapping entre les standards avec les nouvelles versions des spécifications CDA et FHIR qui vont sortir, avec un grand niveau de difficulté. Par exemple, des [travaux italiens sur ce sujet](https://build.fhir.org/ig/hl7-it/cda2fhir/index.html) contiennent plusieurs dizaines de miliers de lignes. Il y a également des questionnements quant à la nature de la donnée.
+Ces travaux ont un défaut : la nécessité de maintenir le mapping entre les standards avec les nouvelles versions des spécifications CDA et FHIR qui vont sortir, avec un grand niveau de difficulté. Par exemple, des [travaux italiens sur ce sujet](https://build.fhir.org/ig/hl7-it/cda2fhir/index.html) contiennent plusieurs dizaines de miliers de lignes. Il y a également des questionnements quant à la responsabilité : qui serait responsable d'une erreur de transformation ?
+La solution choisie pour l'ANS pour l'heure est de faire une preuve de concept d'un mapping CDA - FHIR, générique, sans aller jusqu'à une spécification validée et utilisable en production
 
 #### Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR
 
+La solution qui semble la plus logique est de permettre une utilisation concommitante de FHIR et de CDA, où les spécifications seront publiées selon les deux modes. Cela permettrait donc à chacun d'anticiper la transition tout en laissant la liberté de faire cette transition au moment opportun pour chacun.
+Ainsi, les données historiques resteront au format CDA et les nouveaux comptes rendus seront au format FHIR Document.
+
 ## Actions menées pour encourager l'interopérabilité
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+- Gazelle
+- SMT
+- GitHub
+- PAT
 
 ## Le paradigme "Document" du DMP à compléter par un service orienté donnée
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+
