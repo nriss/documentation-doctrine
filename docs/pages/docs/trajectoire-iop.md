@@ -3,12 +3,28 @@ title: 🧭 Trajectoire interopérabilité
 nav_order: 1
 description: 
 ---
+<!-- TOC -->
 
-<!-- TOC -->autoauto- [Qu'est-ce que l'interopérabilité ?](#quest-ce-que-linteropérabilité-)auto- [Stratégie des versions FHIR](#stratégie-des-versions-fhir)auto    - [Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6](#nouveaux-cas-dusages-fhir-adressés-par-interopsanté-et-lans--privilégier-fhir-r4-et-anticiper-la-transition-vers-r6)auto    - [Ne pas créer d’IG se basant sur R5 sans cas d’usage identifié](#ne-pas-créer-dig-se-basant-sur-r5-sans-cas-dusage-identifié)auto    - [Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant](#priorité-fhir-france-en-2024-et-2025---améliorer-la-qualité-de-lexistant)auto- [Listing des acteurs influençant la trajectoire](#listing-des-acteurs-influençant-la-trajectoire)auto    - [Les acteurs dits "politiques"](#les-acteurs-dits-politiques)auto    - [Les acteurs dits "techniques"](#les-acteurs-dits-techniques)auto    - [Les acteurs dits "implémenteurs"](#les-acteurs-dits-implémenteurs)auto- [Focus FHIR Document](#focus-fhir-document)auto    - [Etude internationale](#etude-internationale)auto    - [Intérêt d'usage du FHIR document](#intérêt-dusage-du-fhir-document)auto    - [Avis de l'Agence du Numerique en Santé](#avis-de-lagence-du-numerique-en-santé)auto        - [Mettre en place une transformation entre les standards CDA et FHIR](#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir)auto        - [Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR](#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir)auto- [Actions menées pour encourager l'interopérabilité](#actions-menées-pour-encourager-linteropérabilité)auto- [Le paradigme "Document" du DMP à compléter par un service orienté donnée](#le-paradigme-document-du-dmp-à-compléter-par-un-service-orienté-donnée)autoauto<!-- /TOC -->
+- [Qu'est-ce que l'interopérabilité ?](#quest-ce-que-linterop%C3%A9rabilit%C3%A9-)
+- [Stratégie des versions FHIR](#strat%C3%A9gie-des-versions-fhir)
+    - [Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6](#nouveaux-cas-dusages-fhir-adress%C3%A9s-par-interopsant%C3%A9-et-lans--privil%C3%A9gier-fhir-r4-et-anticiper-la-transition-vers-r6)
+    - [Ne pas créer d’IG se basant sur R5 sans cas d’usage identifié](#ne-pas-cr%C3%A9er-dig-se-basant-sur-r5-sans-cas-dusage-identifi%C3%A9)
+    - [Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant](#priorit%C3%A9-fhir-france-en-2024-et-2025---am%C3%A9liorer-la-qualit%C3%A9-de-lexistant)
+- [Listing des acteurs influençant la trajectoire](#listing-des-acteurs-influen%C3%A7ant-la-trajectoire)
+    - [Les acteurs dits "politiques"](#les-acteurs-dits-politiques)
+    - [Les acteurs dits "techniques"](#les-acteurs-dits-techniques)
+    - [Les acteurs dits "implémenteurs"](#les-acteurs-dits-impl%C3%A9menteurs)
+- [Focus FHIR Document](#focus-fhir-document)
+    - [Etude internationale](#etude-internationale)
+    - [Intérêt d'usage du FHIR document](#int%C3%A9r%C3%AAt-dusage-du-fhir-document)
+    - [Avis de l'Agence du Numerique en Santé](#avis-de-lagence-du-numerique-en-sant%C3%A9)
+        - [Mettre en place une transformation entre les standards CDA et FHIR](#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir)
+        - [Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR](#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir)
+- [Actions menées pour encourager l'interopérabilité](#actions-men%C3%A9es-pour-encourager-linterop%C3%A9rabilit%C3%A9)
+- [Le paradigme "Document" du DMP à compléter par un service orienté donnée](#le-paradigme-document-du-dmp-%C3%A0-compl%C3%A9ter-par-un-service-orient%C3%A9-donn%C3%A9e)
 
+<!-- /TOC -->
 
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## Qu'est-ce que l'interopérabilité ?
 
