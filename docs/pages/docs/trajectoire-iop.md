@@ -3,6 +3,16 @@ title: 🧭 Trajectoire interopérabilité
 nav_order: 1
 description: 
 ---
+
+
+<!-- TOC generated with Auto Markdown TOC 
+Nom : Auto Markdown TOC
+ID : xavierguarch.auto-markdown-toc
+Description : Markdown TOC (Table Of Contents) Plugin for Visual Studio Code.
+Version : 2.1.4
+Serveur de publication : Xavier Guarch
+Lien de la Place de marché pour VS : https://marketplace.visualstudio.com/items?itemName=xavierguarch.auto-markdown-toc -->
+
 <!-- TOC -->
 
 - [Qu'est-ce que l'interopérabilité ?](#quest-ce-que-linterop%C3%A9rabilit%C3%A9-)
@@ -17,12 +27,12 @@ description:
 - [Focus FHIR Document](#focus-fhir-document)
     - [Etude internationale](#etude-internationale)
     - [Intérêt d'usage du FHIR document](#int%C3%A9r%C3%AAt-dusage-du-fhir-document)
-    - [Avis de l'Agence du Numerique en Santé](#avis-de-lagence-du-numerique-en-sant%C3%A9)
         - [Mettre en place une transformation entre les standards CDA et FHIR](#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir)
         - [Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR](#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir)
 - [Actions menées pour encourager l'interopérabilité](#actions-men%C3%A9es-pour-encourager-linterop%C3%A9rabilit%C3%A9)
 - [Le paradigme "Document" du DMP à compléter par un service orienté donnée](#le-paradigme-document-du-dmp-%C3%A0-compl%C3%A9ter-par-un-service-orient%C3%A9-donn%C3%A9e)
 
+<!-- /TOC -->
 <!-- /TOC -->
 
 
@@ -59,9 +69,10 @@ internationaux sur R6 et d’anticiper les impacts pour l’écosystème FR.
 La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer des IGs R5 engendreraient une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
 S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
-
-- Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien)
-- Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils.
+<ul>
+<li> Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien) </li>
+<li> Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils. </li>
+</ul>
 
 ### Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant
 
@@ -116,10 +127,11 @@ FHIR a été choisi comme standard largement préféré pour les trois cas d'usa
 
 En plus de la trajectoire internationale semblant mener vers l'usage du FHIR document, des avantages non négligeables sont à noter sur l'usage de ce nouveau standard
 
-- Les FHIR Document sont composés d'une multitude de brique, appelée ressource (ex : Observation, Patient, Encounter, ...) qui peuvent être extraites du document facilement pour être consommées et réutilisées au sein d'une API Rest par exemple.
-- Les spécifications peuvent être publiées en open source sur GitHub car leur édition est totalement en mode texte (FSH / markdown), permettant ainsi de faciliter la collaboration, la remontée d'erreurs, la participation de l'écosystème, l'automatisation des différences entre les versions et du changelog, l'historisation automatique des anciennes versions, ...
-- Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France) --> Facilite l'internationalisation des entreprises
-
+<ul>
+<li>Les FHIR Document sont composés d'une multitude de brique, appelée ressource (ex : Observation, Patient, Encounter, ...) qui peuvent être extraites du document facilement pour être consommées et réutilisées au sein d'une API Rest par exemple.</li>
+<li>Les spécifications peuvent être publiées en open source sur GitHub car leur édition est totalement en mode texte (FSH / markdown), permettant ainsi de faciliter la collaboration, la remontée d'erreurs, la participation de l'écosystème, l'automatisation des différences entre les versions et du changelog, l'historisation automatique des anciennes versions, ...</li>
+<li>Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France) --> Facilite l'internationalisation des entreprises</li>
+</ul>
 ### Avis de l'Agence du Numerique en Santé
 
 Dans tous les cas, il est indispensable d'anticiper la prise en charge du FHIR document, les nombreux indices sur les études internationiales et certains projets open sources lancés (cités ci-dessus) mettent en lumière l'importance d'un consensus sur l'utilisation des standards pour une interopérabilité internationale.
@@ -140,10 +152,7 @@ Ainsi, les données historiques resteront au format CDA et les nouveaux comptes 
 
 ## Actions menées pour encourager l'interopérabilité
 
-- Gazelle
-- SMT
-- GitHub
-- PAT
+Gazelle, SMT, GitHub, PAT
 
 ## Le paradigme "Document" du DMP à compléter par un service orienté donnée
 
