@@ -27,6 +27,7 @@ Lien de la Place de marché pour VS : https://marketplace.visualstudio.com/item
 - [Focus FHIR Document](#focus-fhir-document)
     - [Etude internationale](#etude-internationale)
     - [Intérêt d'usage du FHIR document](#int%C3%A9r%C3%AAt-dusage-du-fhir-document)
+    - [Position de l'Agence du Numerique en Santé](#position-de-lagence-du-numerique-en-sant%C3%A9)
         - [Mettre en place une transformation entre les standards CDA et FHIR](#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir)
         - [Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR](#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir)
 - [Actions menées pour encourager l'interopérabilité](#actions-men%C3%A9es-pour-encourager-linterop%C3%A9rabilit%C3%A9)
@@ -127,14 +128,17 @@ FHIR a été choisi comme standard largement préféré pour les trois cas d'usa
 
 En plus de la trajectoire internationale semblant mener vers l'usage du FHIR document, des avantages non négligeables sont à noter sur l'usage de ce nouveau standard
 
-<ul>
-<li>Les FHIR Document sont composés d'une multitude de brique, appelée ressource (ex : Observation, Patient, Encounter, ...) qui peuvent être extraites du document facilement pour être consommées et réutilisées au sein d'une API Rest par exemple.</li>
-<li>Les spécifications peuvent être publiées en open source sur GitHub car leur édition est totalement en mode texte (FSH / markdown), permettant ainsi de faciliter la collaboration, la remontée d'erreurs, la participation de l'écosystème, l'automatisation des différences entre les versions et du changelog, l'historisation automatique des anciennes versions, ...</li>
-<li>Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France) --> Facilite l'internationalisation des entreprises</li>
-</ul>
-### Avis de l'Agence du Numerique en Santé
+<div class="wysiwyg">
+    <ul>
+        <li>Les FHIR Document sont composés d'une multitude de brique, appelée ressource (ex : Observation, Patient, Encounter, ...) qui peuvent être extraites du document facilement pour être consommées et réutilisées au sein d'une API Rest par exemple.</li>
+        <li>Les spécifications peuvent être publiées en open source sur GitHub car leur édition est totalement en mode texte (FSH / markdown), permettant ainsi de faciliter la collaboration, la remontée d'erreurs, la participation de l'écosystème, l'automatisation des différences entre les versions et du changelog, l'historisation automatique des anciennes versions, ...</li>
+        <li>Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France) --> Facilite l'internationalisation des entreprises</li>
+    </ul>
+</div>
 
-Dans tous les cas, il est indispensable d'anticiper la prise en charge du FHIR document, les nombreux indices sur les études internationiales et certains projets open sources lancés (cités ci-dessus) mettent en lumière l'importance d'un consensus sur l'utilisation des standards pour une interopérabilité internationale.
+### Position de l'Agence du Numerique en Santé
+
+Il est à ce point indéniable qu'il est nécessaire de prioriser la prise en charge du FHIR document, les nombreux indices sur les études internationales et certains projets open sources lancés mettent en lumière le consensus international sur l'utilisation du FHIR Document.
 
 Il existe deux possibilités quant à l'usage du standard FHIR dans la gestion des documents en France
 
@@ -143,12 +147,13 @@ Il existe deux possibilités quant à l'usage du standard FHIR dans la gestion d
 Ces travaux ont un défaut : la nécessité de maintenir le mapping entre les standards avec les nouvelles versions des spécifications CDA et FHIR qui vont sortir, avec un grand niveau de difficulté. Par exemple, des [travaux italiens sur ce sujet](https://build.fhir.org/ig/hl7-it/cda2fhir/index.html) contiennent plusieurs dizaines de miliers de lignes. Il y a également des questionnements quant à la responsabilité : qui serait responsable d'une erreur de transformation ?
 La solution choisie pour l'ANS pour l'heure est de faire une preuve de concept d'un mapping CDA - FHIR, générique, sans aller jusqu'à une spécification validée et utilisable en production
 
-Pour une transformation des CDA vers FHIR complète, il faudrait que l'ensemble des spécifications CDA françaises soient définies au format StructureDefinition pour utiliser le FHIR Mapping Language.Co
+Pour une transformation des CDA vers FHIR complète, il faudrait que l'ensemble des spécifications CDA françaises soient définies au format StructureDefinition pour utiliser le FHIR Mapping Language.
 
 #### Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR
 
-La solution qui semble la plus logique est de permettre une utilisation concommitante de FHIR et de CDA, où les spécifications seront publiées selon les deux modes. Cela permettrait donc à chacun d'anticiper la transition tout en laissant la liberté de faire cette transition au moment opportun pour chacun.
-Ainsi, les données historiques resteront au format CDA et les nouveaux comptes rendus seront au format FHIR Document.
+La solution qui semble la plus logique est de permettre une utilisation concommitante de FHIR et de CDA, où les spécifications seront publiées selon les deux modes. Cela permettrait une transition douce avec un timing au choix de chacun vers le passage au paradigme FHIR Document.
+
+Ainsi, au même titre que les documents CDA ne sont pas automatiquement transformés vers les nouvelles versions des spécifications, les documents historiques resteront au format CDA et les nouveaux au format FHIR Document.
 
 ## Actions menées pour encourager l'interopérabilité
 
