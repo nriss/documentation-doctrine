@@ -15,27 +15,33 @@ Lien de la Place de marché pour VS : https://marketplace.visualstudio.com/item
 
 <!-- TOC -->
 
-- [Qu'est-ce que l'interopérabilité ?](#quest-ce-que-linterop%C3%A9rabilit%C3%A9-)
-- [Stratégie des versions FHIR](#strat%C3%A9gie-des-versions-fhir)
-    - [Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6](#nouveaux-cas-dusages-fhir-adress%C3%A9s-par-interopsant%C3%A9-et-lans--privil%C3%A9gier-fhir-r4-et-anticiper-la-transition-vers-r6)
-    - [Ne pas créer d’IG se basant sur R5 sans cas d’usage identifié](#ne-pas-cr%C3%A9er-dig-se-basant-sur-r5-sans-cas-dusage-identifi%C3%A9)
-    - [Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant](#priorit%C3%A9-fhir-france-en-2024-et-2025---am%C3%A9liorer-la-qualit%C3%A9-de-lexistant)
-- [Listing des acteurs influençant la trajectoire](#listing-des-acteurs-influen%C3%A7ant-la-trajectoire)
-    - [Les acteurs dits "politiques"](#les-acteurs-dits-politiques)
-    - [Les acteurs dits "techniques"](#les-acteurs-dits-techniques)
-    - [Les acteurs dits "implémenteurs"](#les-acteurs-dits-impl%C3%A9menteurs)
-- [Focus FHIR Document](#focus-fhir-document)
-    - [Etude internationale](#etude-internationale)
-    - [Intérêt d'usage du FHIR document](#int%C3%A9r%C3%AAt-dusage-du-fhir-document)
-    - [Position de l'Agence du Numerique en Santé](#position-de-lagence-du-numerique-en-sant%C3%A9)
-        - [Mettre en place une transformation entre les standards CDA et FHIR](#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir)
-        - [Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR](#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir)
-- [Actions menées pour encourager l'interopérabilité](#actions-men%C3%A9es-pour-encourager-linterop%C3%A9rabilit%C3%A9)
-- [Le paradigme "Document" du DMP à compléter par un service orienté donnée](#le-paradigme-document-du-dmp-%C3%A0-compl%C3%A9ter-par-un-service-orient%C3%A9-donn%C3%A9e)
-
-<!-- /TOC -->
-<!-- /TOC -->
-
+<ul>
+<li><a href="#quest-ce-que-linterop%C3%A9rabilit%C3%A9-">Qu&#39;est-ce que l&#39;interopérabilité ?</a></li>
+<li><a href="#strat%C3%A9gie-des-versions-fhir">Stratégie des versions FHIR</a><ul>
+<li><a href="#nouveaux-cas-dusages-fhir-adress%C3%A9s-par-interopsant%C3%A9-et-lans--privil%C3%A9gier-fhir-r4-et-anticiper-la-transition-vers-r6">Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6</a></li>
+<li><a href="#ne-pas-cr%C3%A9er-dig-se-basant-sur-r5-sans-cas-dusage-identifi%C3%A9">Ne pas créer d’IG se basant sur R5 sans cas d’usage identifié</a></li>
+<li><a href="#priorit%C3%A9-fhir-france-en-2024-et-2025---am%C3%A9liorer-la-qualit%C3%A9-de-lexistant">Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant</a></li>
+</ul>
+</li>
+<li><a href="#listing-des-acteurs-influen%C3%A7ant-la-trajectoire">Listing des acteurs influençant la trajectoire</a><ul>
+<li><a href="#les-acteurs-dits-politiques">Les acteurs dits &quot;politiques&quot;</a></li>
+<li><a href="#les-acteurs-dits-techniques">Les acteurs dits &quot;techniques&quot;</a></li>
+<li><a href="#les-acteurs-dits-impl%C3%A9menteurs">Les acteurs dits &quot;implémenteurs&quot;</a></li>
+</ul>
+</li>
+<li><a href="#focus-fhir-document">Focus FHIR Document</a><ul>
+<li><a href="#etude-internationale">Etude internationale</a></li>
+<li><a href="#int%C3%A9r%C3%AAt-dusage-du-fhir-document">Intérêt d&#39;usage du FHIR document</a></li>
+<li><a href="#position-de-lagence-du-numerique-en-sant%C3%A9">Position de l&#39;Agence du Numerique en Santé</a><ul>
+<li><a href="#mettre-en-place-une-transformation-entre-les-standards-cda-et-fhir">Mettre en place une transformation entre les standards CDA et FHIR</a></li>
+<li><a href="#permettre-une-utilisation-concommitante-de-fhir-et-de-cda-le-temps-dune-transition-vers-fhir">Permettre une utilisation concommitante de FHIR et de CDA le temps d&#39;une transition vers FHIR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#actions-men%C3%A9es-pour-encourager-linterop%C3%A9rabilit%C3%A9">Actions menées pour encourager l&#39;interopérabilité</a></li>
+<li><a href="#le-paradigme-document-du-dmp-%C3%A0-compl%C3%A9ter-par-un-service-orient%C3%A9-donn%C3%A9e">Le paradigme &quot;Document&quot; du DMP à compléter par un service orienté donnée</a></li>
+</ul>
 
 ## Qu'est-ce que l'interopérabilité ?
 
@@ -70,10 +76,13 @@ internationaux sur R6 et d’anticiper les impacts pour l’écosystème FR.
 La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer des IGs R5 engendreraient une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
 S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
-<ul>
-<li> Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien) </li>
-<li> Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils. </li>
-</ul>
+
+<div class="wysiwyg">
+    <ul>
+        <li> Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien) </li>
+        <li> Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils. </li>
+    </ul>
+</div>
 
 ### Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant
 
@@ -168,4 +177,5 @@ L'historique français avec le DMP montre le cas d'usage "document" : un documen
 
 Il y a par exemple déjà actuellement les API Mesures de santé et Agenda de mon espace santé où il y a des données accessibles via des requêtes REST sans document médical.
 
-Ainsi, il ne faudra pas négliger ce paradigme API REST de données unitaires pour certains cas d'usages s'y pretant bien, comme par exemple une API de vaccination, une API Cercle de Soins, une API pour la diffusion des essais cliniques ouverts au recrutement, etc ...
+Ainsi, il ne faudra pas négliger ce paradigme API REST de données unitaires pour certains cas d'usages s'y pretant bien, comme par exemple une API de vaccination, une API Cercle de Soins, une API pour la diffusion des essais cliniques ouverts au recrutement. L'intérêt tout particulier de ce type d'API réside sur l'utilisation de critères de recherches standards définis par FHIR pour accéder à l'information d'intérêt simplement, sans superflux.
+
