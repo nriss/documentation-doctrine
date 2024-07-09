@@ -81,10 +81,13 @@ Beaucoup de travaux ont été menés en 2023 tels que le passage au format IG et
 
 En 2024 et 2025, les priorités sont :
 
-- La montée en compétences et l’acculturation des développeurs aux bonnes pratiques d’usages de FHIR
-- S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, …).
-- La prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.
-
+<div class="wysiwyg">
+    <ul>
+        <li>La montée en compétences et l’acculturation des développeurs aux bonnes pratiques d’usages de FHIR, notamment en organisant des évènements par l'ANS et InteropSanté : projectathon, webinaires, formations, ...</li>
+        <li>S’assurer de la faisabilité d’implémentation des IGs existants (amélioration du contenu narratif pour expliquer comment utiliser les ressources, s’assurer de la facilité d’accès au contenu, …).</li>
+        <li>La prise en main des outils de mapping tel que le FHIR Mapping Language afin d'assurer une transition maîtrisée vers une autre version de FHIR.</li>
+    </ul>
+</div>
 Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilitéet de se garder la possibilité de réitérer l’analyse si le besoin a évolué.
 
 <!-- ## Cartographie de l'interopérabilité -->
@@ -113,7 +116,7 @@ Aujourd'hui en France, l'ensemble des documents médicaux sont stockés en CDA, 
 
 ### Etude internationale
 
-Selon l'étude [2024 State of FHIR survey](../../assets/docs/2024 StateofFHIRSurveyResults_final.pdf), la majorité des pays voit une forte augmentation de l'usage de FHIR.
+Selon l'étude [2024 State of FHIR](../../assets/docs/2024 StateofFHIRSurveyResults_final.pdf), la majorité des pays voit une forte augmentation de l'usage de FHIR.
 
 ![](../../assets/images/fhir-adoption-rate-change.png)
 
