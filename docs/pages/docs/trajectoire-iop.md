@@ -11,8 +11,8 @@ ID : xavierguarch.auto-markdown-toc
 Description : Markdown TOC (Table Of Contents) Plugin for Visual Studio Code.
 Version : 2.1.4
 Serveur de publication : Xavier Guarch
-Lien de la Place de marché pour VS : https://marketplace.visualstudio.com/items?itemName=xavierguarch.auto-markdown-toc -->
-
+Lien de la Place de marché pour VS : https://marketplace.visualstudio.com/items?itemName=xavierguarch.auto-markdown-toc 
+Transformé en HTML : https://markdowntohtml.com/ -->
 <!-- TOC -->
 
 <ul>
