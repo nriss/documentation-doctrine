@@ -84,8 +84,10 @@ La priorité actuelle est de faire monter l’écosystème en compétences et de
 S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
 
 <div class="wysiwyg">
-- Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien)
-- Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils.
+    <ul>
+        <li> Créer un profil FrCore dans l’IG du cas d’usage en mimant ce qui a été fait en R4 (comme dans cet IG autrichien) </li>
+        <li> Si le besoin de profils est répété au niveau de plusieurs cas d’usages, créer un IG FrCore R5 à alimenter progressivement avec de nouveaux profils. </li>
+    </ul>
 </div>
 
 ### Priorité FHIR France en 2024 et 2025 - Améliorer la qualité de l’existant
