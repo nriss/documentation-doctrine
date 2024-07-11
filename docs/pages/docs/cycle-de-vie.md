@@ -58,10 +58,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
-| Statut de maturité CI-SIS | Statut IG | label de publication | Mode de publication |
-| --- | --- | --- | --- |
-| draft | draft | ci-build | N/A |
-| public-comment | draft | ballot | working |
-| for implementation | active | trial-use | milestone |
-| final-text | active | final-text | milestone|
-| withdrawn ou deprecated | retired | resp. withdrawn ou retired | withdrawal |
+| Nom | Description | Cardinalité |
+| --- | --- | --- |
+| identifiant | Identifiant ou URL identifiante d’accès à la spécification | 1..1 |
+| statut | Statut de la spécification selon les statuts définis par l’ANS. Les statuts peuvent être rédigés en anglais ou en français. | 1..1 |
+| version | Version au format semver | 1..1 |
+| code | Code qui définit la spécification | 1..1 |
+| titre | Titre de la spécification | 1..1 |
+| description | Description succinte du périmètre de la spécification | 1..1 |
+| date de dernière mise à jour | Date de dernière publication de la spécification | 1..1 |
+| licenses |  | 1..1 |
+| Standards principaux | Standards syntaxiques et sémantiques, profils sur lesquels s'appuent la spécification | 1..1 |
+| Contexte projet | Lien•s vers le référentiel/cadre où la spécification est utilisée | 1..1 |
+| Catégorie | Catégorie métier de la spécification (équivalent des technical frameworks IHE) correspondant aux préfixes des spécifications CDA | 1..1 |
+| Type | Typee de spécification | 1..1 |
+| Utilisations connues | Formulaire d’auto-déclaration de conformité pour les éditeurs (à définir) | 1..1 |
+| Porteur | Permet d’afficher le porteur de laspécification. Particulièrement important dans le cas de l’UP externe | 1..1 |
+| Contact | Permet d’afficher le contact de la spécification. Particulièrement important dans le cas de l’UP externe | 1..1 |
