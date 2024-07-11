@@ -60,24 +60,23 @@ Pour les développeurs, l'interopérabilité doit être pensé au plus tôt au m
 
 L'interopérabilité est souvent confondue avec référencement, or ils ne sont pas synonymes. Les référencements peuvent avoir des exigences d'interopérabilité, c'est à dire la nécessité de respecter certains modèles de données, mais les exigences peuvent être beaucoup plus larges : sécurité, hébergement HDS, ...
 
+--> L'interopérabilité ne concerne pas que les entreprises qui veulent se faire référencer
+
 ## Stratégie - choix de la version FHIR
 
 La stratégie sur le choix des versions FHIR a été définie au sein d'un groupe de travail organisé entre InteropSanté et l'ANS en 2023/2024, complétée par une [concertation](https://participez.esante.gouv.fr/project/fhir-r5-ou-r4/presentation/presentation) de l'ANS. Les conclusions de ce GT sont indiquées ci-dessous.
 
 ### Nouveaux cas d’usages FHIR adressés par Interop’Santé et l’ANS : privilégier FHIR R4 et anticiper la transition vers R6
 
-Pour garantir un écosystème cohérent et permettre l'interopérabilité, il est nécessaire d'utiliser une même version du standard FHIR à l'échelle nationale. Il a ainsi été choisi de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d'éviter une double transition R4 --> R5 et R5 --> R6.
-
-Dans certains cas, une autre version de FHIR peut être justifiée, par exemple pour des besoins d’échanges internationaux ou pour des ressources qui ont beaucoup évolué en termes de modélisation ou de maturité entre deux versions. Le cas échéant, l’usage d’une nouvelle version devra être validé par une étude des normes et standards et par l’écosystème.
-Dans certains cas non identifiés à ce jour, il pourrait également être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d'estimer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience.
-
-D'autre part, la release 6 se veut être la “final stable version” de FHIR, une transition vers R6 se veut donc nécessaire. Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de R6 et d’anticiper les impacts pour l’écosystème français.
+Pour garantir un écosystème cohérent et permettre l'interopérabilité, il est nécessaire d'utiliser une même version du standard FHIR à l'échelle nationale. Il a ainsi été choisi de conserver FHIR R4 car il y a un existant conséquent en France et cela permet d'éviter une double transition R4 --> R5 et R5 --> R6. Ce choix est conforté car la release 6 se veut être la “final stable version” de FHIR, une transition vers R6 se voudra de toute manière nécessaire. Pour anticiper cette transition, il est jugé important d’être proactif sur les travaux internationaux de R6 et d’anticiper les impacts pour l’écosystème français.
 
 ### Ne pas créer d’IG se basant sur R5 sans analyse des normes et standards et des impacts
 
 La priorité actuelle est de faire monter l’écosystème en compétences et de gagner en maturité sur les spécifications existantes. Créer des IGs R5 engendreraient une fragmentation de l’écosystème et un ralentissement de la mise en qualité de l’existant qui finirait par freiner l’adoption de FHIR.
 
-S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
+Dans certains cas, une autre version de FHIR peut être justifiée, par exemple si le cas d'usage concerne des échanges internationaux ou pour que le cas d'usage est mieux répondu dans une autre version. Le cas échéant, l’usage d’une autre version devra être validé par une étude des normes et standards et par l’écosystème.
+
+Si un cas d’usage où FHIR R5 a été justifié, et que celui-ci nécessite des profils nationaux (FrCore) :
 
 <div class="wysiwyg">
     <ul>
@@ -86,11 +85,13 @@ S’il y a un cas d’usage dont l’usage de FHIR R5 a été justifié, et que 
     </ul>
 </div>
 
+Dans certains cas non identifiés à ce jour, il pourrait également être nécessaire de maintenir des guides d’implémentation sous plusieurs versions. Après validation par l’écosystème de ce besoin, cela donnerait l’opportunité d'estimer des travaux de maintenance d’Implementation Guide (IG) sous plusieurs versions ainsi qu’un mapping associé pour gagner en expérience.
+
 ### Priorité FHIR France en 2024 et 2025 - améliorer la qualité de l’existant
 
 De nombreux travaux ont été menés en 2023 pour mettre en qualité les spécifications FHIR et encourager leur déploiement, tel que le passage au format IG et la mise à jour des tests et validateurs gazelle.
 
-Les priorités des prochaines années sont dans ce sens :
+Les priorités des prochaines années sont de continuer dans cette direction :
 
 <div class="wysiwyg">
     <ul>
@@ -101,7 +102,7 @@ Les priorités des prochaines années sont dans ce sens :
     </ul>
 </div>
 
-Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilité et de se garder la possibilité de réitérer l’analyse si le besoin a évolué.
+Il est également nécessaire de rester à l’écoute des tendances internationales en interopérabilité et de se garder la possibilité de réitérer l’analyse si le besoin ou le contexte international évolue.
 
 <!-- ## Cartographie de l'interopérabilité -->
 
@@ -129,26 +130,26 @@ Aujourd'hui en France, l'ensemble des documents médicaux sont stockés en CDA, 
 
 ### Etude internationale
 
-Selon l'étude [2024 State of FHIR](../../assets/docs/2024 StateofFHIRSurveyResults_final.pdf), la majorité des pays voit une forte augmentation de l'usage de FHIR.
+Selon l'étude [2024 State of FHIR](../../assets/docs/2024 StateofFHIRSurveyResults_final.pdf), l'utilisation du standard FHIR augmente dans la majorité des pays.
 
 ![](../../assets/images/fhir-adoption-rate-change.png)
 
-Cette étude dévoile également un nombre important de pays utilisant le FHIR document.
+Cette même étude dévoile un nombre important de pays utilisant le FHIR document.
 
 ![](../../assets/images/fhir-documents.png)
 
 De plus, les projets européens European Health Data Space (EHDS) ayant fait une étude de normes et standards pour les échanges transfrontaliers au sein de l'Europe a conclu sur l'usage du FHIR Document. Ce choix est justifié par le fait que certains pays n'ont pas d'historiques et choisissent très logiquement d'utiliser le standard FHIR étant plus récent et plus à la mode.
-FHIR a été choisi comme standard largement préféré pour les trois cas d'usages identifiés par l'europe comme partage transfrontalier : le lab report, l'hospital discharge report et enfin le medical imaging report (resp. 18, 17 et 16 membres préféraient FHIR contre 3, 5 et 5 pour CDA).
+FHIR a été choisi comme standard largement préféré pour les trois cas d'usages identifiés par l'Europe comme partage transfrontalier : le lab report, l'hospital discharge report et enfin le medical imaging report (resp. 18, 17 et 16 membres préféraient FHIR contre 3, 5 et 5 pour CDA).
 
 ### Intérêt d'usage du FHIR document
 
-En plus de la trajectoire internationale semblant mener vers l'usage du FHIR document, des avantages non négligeables sont à noter sur l'usage de ce nouveau standard
+En plus de la trajectoire internationale semblant mener vers l'usage du FHIR document, des avantages non négligeables sont à noter sur l'usage de ce nouveau standard.
 
 <div class="wysiwyg">
     <ul>
         <li>Les FHIR Document sont composés d'une multitude de brique, appelée ressource (ex : Observation, Patient, Encounter, ...) qui peuvent être extraites du document facilement pour être consommées et réutilisées au sein d'une API Rest par exemple.</li>
         <li>Les spécifications peuvent être publiées en open source sur GitHub car leur édition est totalement en mode texte (FSH / markdown), permettant ainsi de faciliter la collaboration, la remontée d'erreurs, la participation de l'écosystème, l'automatisation des différences entre les versions et du changelog, l'historisation automatique des anciennes versions, ...</li>
-        <li>Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France) --> Facilite l'internationalisation des entreprises</li>
+        <li>Les développements faits seront facilement réutilisables à l'international (ex : Lab Report d'HL7 Europe dévié pour la France), ce qui facilite l'internationalisation des entreprises.</li>
     </ul>
 </div>
 
@@ -156,22 +157,23 @@ Aux Etats-Unis, les spécifications CDA ont fait leur premier pas vers FHIR, cel
 
 ### Position de l'Agence du Numerique en Santé
 
-Il est à ce point indéniable qu'il est nécessaire de prioriser la prise en charge du FHIR document, les nombreux indices sur les études internationales et certains projets open sources lancés mettent en lumière le consensus international sur l'utilisation du FHIR Document.
+La nécessité de prioriser la prise en charge du FHIR document est à ce point indéniable, de nombreux indices sur les études internationales et la multiplication de projets lancés mettent en lumière le consensus international sur l'utilisation du FHIR Document.
 
 Il existe deux possibilités quant à l'usage du standard FHIR dans la gestion des documents en France
 
 #### Mettre en place une transformation entre les standards CDA et FHIR
 
 Ces travaux ont un défaut : la nécessité de maintenir le mapping entre les standards avec les nouvelles versions des spécifications CDA et FHIR qui vont sortir, avec un grand niveau de difficulté. Par exemple, des [travaux italiens sur ce sujet](https://build.fhir.org/ig/hl7-it/cda2fhir/index.html) contiennent plusieurs dizaines de miliers de lignes. Il y a également des questionnements quant à la responsabilité : qui serait responsable d'une erreur de transformation ?
-La solution choisie pour l'ANS pour l'heure est de faire une preuve de concept d'un mapping CDA - FHIR, générique, sans aller jusqu'à une spécification validée et utilisable en production
 
 Pour une transformation des CDA vers FHIR complète, il faudrait que l'ensemble des spécifications CDA françaises soient définies au format StructureDefinition pour utiliser le FHIR Mapping Language.
 
 #### Permettre une utilisation concommitante de FHIR et de CDA le temps d'une transition vers FHIR
 
-La solution qui semble la plus logique est de permettre une utilisation concommitante de FHIR et de CDA, où les spécifications seront publiées selon les deux modes. Cela permettrait une transition douce avec un timing au choix de chacun vers le passage au paradigme FHIR Document.
+Cette solution permettrait une utilisation concommitante de FHIR et de CDA, où les spécifications seront publiées selon les deux modes. Cela permettrait une transition douce avec un timing au choix de chacun vers le passage au paradigme FHIR Document.
 
 Ainsi, au même titre que les documents CDA ne sont pas automatiquement transformés vers les nouvelles versions des spécifications, les documents historiques resteront au format CDA et les nouveaux au format FHIR Document.
+
+La solution qui semble se dessiner pour l'ANS est de permettre une utilisation concommitante de FHIR et de CDA pour faire une transition douce, complétée d'une preuve de concept d'un mapping CDA - FHIR, générique, sans aller jusqu'à une spécification validée et utilisable en production, pour aider les éditeurs dans leur transition.
 
 ## Actions menées pour encourager l'interopérabilité
 
